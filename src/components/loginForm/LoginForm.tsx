@@ -2,7 +2,7 @@ import { useFormik } from "formik";
 import MyButton from "../myButton/MyButton";
 import MyInput from "../myInput/MyInput";
 import "./loginForm.css";
-import { useAuth } from "../../context/authContext";
+import { useAuth } from "../../context/weatherContext";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 

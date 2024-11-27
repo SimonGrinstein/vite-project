@@ -39,6 +39,7 @@ li {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  background-image: url("./pic/pic2.png");
 }
 
 .lesson-container > h2, li {

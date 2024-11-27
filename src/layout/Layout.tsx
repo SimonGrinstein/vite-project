@@ -5,11 +5,13 @@ import Footer from "../components/footer/Footer";
 export default function Layout() {
   return (
     <>
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
+      <div className="lessonContainer">
+        <Header />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
