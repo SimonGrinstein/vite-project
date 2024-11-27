@@ -45,6 +45,7 @@ interface IWeatherContextType {
   setWeatherData: React.Dispatch<React.SetStateAction<IWeatherData>>
 }
 
+
 export const WeatherContext = createContext<IWeatherContextType | undefined>(undefined);
 
 

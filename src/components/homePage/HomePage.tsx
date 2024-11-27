@@ -3,6 +3,7 @@ import { useState } from "react";
 import * as Yup from "yup";
 import styles from "./homePage.module.css";
 import { useWeather } from "../../context/weatherContext";
+import MyButton from "../myButton/MyButton";
 
 export interface IWeatherForecast {
   id: number;
@@ -91,6 +92,7 @@ export default function HomePage() {
       fetchWeather(values.name);
     },
   });
+  
 
   return (
     <div className="lesson-container">
@@ -114,6 +116,7 @@ export default function HomePage() {
             <p>State is {weatherData.name}</p>
             <p>Timezone is {weatherData.timezone}</p>
             <p>Temp is {weatherData.main.temp}</p>
+            <MyButton text="Save" isDanger= {false} />
           </div>
         </>
       ) : (
